@@ -1,74 +1,98 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>jQuery Mobile: Theme Download</title>
+		<link rel="stylesheet" href="themes/AuditMaster.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.structure-1.1.1.min.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.1.min.js"><\/script>')</script>
+		<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery.mobile-1.1.1.min.js"><\/script>')</script>
+        <script src="js/main.js"></script>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="AuditMaster : AuditMaster" />
+	</head>
+	<body>
+		<div data-role="page" data-theme="a" id="page1">
+			<div data-role="header" data-position="inline">
+				<h1>Audit Master Menu</h1>
+			</div>
+			<div data-role="content" data-theme="a">
+                Menu<br />
+                <a href="#Page2">Go to next page</a>
+			</div>
+		</div>
+    <div data-role="page" data-theme="a" id="Page2">
+        <div data-role="header" data-position="inline">
+            <h1>Audit Master</h1>
+        </div>
+        <div data-role="content" data-theme="a">
+            <div style="width: 40%; float: left;">
+                <h2>Audit</h2>
+            </div>
+            <div id="divOverShort" style="float: right; width: 50%;">
+                <h2><label id="lblOverShort">Over/Short:&nbsp&nbsp</label><label id="overShort">0</label></h2>
+            </div>
+            <div style="width: 50%; float: left;" id="colDollars">
+                <div data-role="fieldcontain">
+                    <label for="ones">Ones</label>
+                    <input type="tel" name="ones" id="ones">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="fives">Fives</label>
+                    <input type="tel" name="fives" id="fives">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="fives">Tens</label>
+                    <input type="tel" name="tens" id="tens">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="fives">Twenties</label>
+                    <input type="tel" name="twenties" id="twenties">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="fifties">Fifties</label>
+                    <input type="tel" name="fifties" id="fifties">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="fives">Hundreds</label>
+                    <input type="tel" name="hundreds" id="hundreds">
+                </div>
+            </div>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+            <div style="width: 50%; float: right;" id="colCoins">
+                <div data-role="fieldcontain">
+                    <label for="pennies">Pennies</label>
+                    <input type="tel" name="pennies" id="pennies">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="nickles">Nickles</label>
+                    <input type="tel" name="nickles" id="nickles">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="dimes">Dimes</label>
+                    <input type="tel" name="dimes" id="dimes">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="quarters">Quarters</label>
+                    <input type="tel" name="quarters" id="quarters">
+                </div>
 
-    <title>AuditMaster</title>
-  </head>
+            </div>
+            <div style="width: 50%; float: right;" id="colTotals">
+                <div data-role="fieldcontain">
+                    <label for="start_bank">Start Bank</label>
+                    <input type="tel" name="Start Bank" id="start_bank">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="report_total">Report Total</label>
+                    <input type="tel" name="Report Total" id="report_total">
+                </div>
+            </div>
+            <div style="width: 100%; float: left;"><a href="#page1">Back to first page</a></div>
 
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/levia7han/AuditMaster">View on GitHub</a>
-
-          <h1 id="project_title">AuditMaster</h1>
-          <h2 id="project_tagline">AuditMaster</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/levia7han/AuditMaster/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/levia7han/AuditMaster/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+        </div>
     </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">AuditMaster maintained by <a href="https://github.com/levia7han">levia7han</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+	</body>
 </html>
