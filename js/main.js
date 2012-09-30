@@ -20,6 +20,18 @@ $(document).ready(function() {
         return total;
     }
 
+    $('#btnInstall').click(function() {
+        var installation = navigator.mozApps.install(
+            "http://Levia7han.github.com/AuditMaster/manifest.webapp");
+        installation.onsuccess = function() {
+            $('#btnInstall').hide();
+            alert("K.O. Timer has been successfully installed.....");
+        }
+        installation.onerror = function() {
+            alert("APP: The installation FAILED : " + this.error.name);
+        }
+    });
+
 });
 
 function Audit(csrID,locationID)
