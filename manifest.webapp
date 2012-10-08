@@ -1,7 +1,7 @@
 {
   "name": "My App",
   "description": "My elevator pitch goes here",
-  "launch_path": "/Levia7han/AuditMaster/",
+  "launch_path": "/AuditMaster/",
   "icons": {
     "128": "/img/icon-128.png"
   },
