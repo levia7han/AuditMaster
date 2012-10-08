@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>jQuery Mobile: Theme Download</title>
 		<link rel="stylesheet" href="themes/AuditMaster.min.css" />
-		<link rel="stylesheet" href="themes/jquery.mobile.structure-1.1.1.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.structure-1.1.1.css" />
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.1.min.js"><\/script>')</script>
 		<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
@@ -34,50 +34,57 @@
             <div id="divOverShort" style="float: right; width: 50%;">
                 <h2><label id="lblOverShort">Over/Short:&nbsp&nbsp</label><label id="overShort">0</label></h2>
             </div>
-            <div style="width: 50%; float: left;" id="colDollars">
-                <div data-role="fieldcontain">
-                    <label for="ones">Ones</label>
-                    <input type="tel" name="ones" id="ones">
-                </div>
-                <div data-role="fieldcontain">
-                    <label for="fives">Fives</label>
-                    <input type="tel" name="fives" id="fives">
-                </div>
-                <div data-role="fieldcontain">
-                    <label for="fives">Tens</label>
-                    <input type="tel" name="tens" id="tens">
-                </div>
-                <div data-role="fieldcontain">
-                    <label for="fives">Twenties</label>
-                    <input type="tel" name="twenties" id="twenties">
-                </div>
-                <div data-role="fieldcontain">
-                    <label for="fifties">Fifties</label>
-                    <input type="tel" name="fifties" id="fifties">
-                </div>
-                <div data-role="fieldcontain">
-                    <label for="fives">Hundreds</label>
-                    <input type="tel" name="hundreds" id="hundreds">
+            <div style="width: 100%; float:left;">
+                <div class="ui-grid-a">
+                        <div class="ui-block-a" id="colDollars">
+                            <div data-role="fieldcontain">
+                                <label for="ones">Ones</label>
+                                <input type="tel" name="ones" id="ones">
+                            </div>
+                            <div data-role="fieldcontain">
+                                <label for="fives">Fives</label>
+                                <input type="tel" name="fives" id="fives">
+                            </div>
+                            <div data-role="fieldcontain">
+                                <label for="tens">Tens</label>
+                                <input type="tel" name="tens" id="tens">
+                            </div>
+                            <div data-role="fieldcontain">
+                                <label for="twenties">Twenties</label>
+                                <input type="tel" name="twenties" id="twenties">
+                            </div>
+                            <div data-role="fieldcontain">
+                                <label for="fifties">Fifties</label>
+                                <input type="tel" name="fifties" id="fifties">
+                            </div>
+                            <div data-role="fieldcontain">
+                                <label for="hundreds">Hundreds</label>
+                                <input type="tel" name="hundreds" id="hundreds">
+                            </div>
+                        </div>
+                        <div class="ui-block-b" id="colCoins">
+                            <div data-role="fieldcontain">
+                                <label for="pennies">Pennies</label>
+                                <input type="tel" name="pennies" id="pennies">
+                            </div>
+                            <div data-role="fieldcontain">
+                                <label for="nickles">Nickles</label>
+                                <input type="tel" name="nickles" id="nickles">
+                            </div>
+                            <div data-role="fieldcontain">
+                                <label for="dimes">Dimes</label>
+                                <input type="tel" name="dimes" id="dimes">
+                            </div>
+                            <div data-role="fieldcontain">
+                                <label for="quarters">Quarters</label>
+                                <input type="tel" name="quarters" id="quarters">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!--<div style="width: 50%; float: right;" id="colCoins">
 
-            <div style="width: 50%; float: right;" id="colCoins">
-                <div data-role="fieldcontain">
-                    <label for="pennies">Pennies</label>
-                    <input type="tel" name="pennies" id="pennies">
-                </div>
-                <div data-role="fieldcontain">
-                    <label for="nickles">Nickles</label>
-                    <input type="tel" name="nickles" id="nickles">
-                </div>
-                <div data-role="fieldcontain">
-                    <label for="dimes">Dimes</label>
-                    <input type="tel" name="dimes" id="dimes">
-                </div>
-                <div data-role="fieldcontain">
-                    <label for="quarters">Quarters</label>
-                    <input type="tel" name="quarters" id="quarters">
-                </div>
 
             </div>
             <div style="width: 50%; float: right;" id="colTotals">
@@ -89,7 +96,7 @@
                     <label for="report_total">Report Total</label>
                     <input type="tel" name="Report Total" id="report_total">
                 </div>
-            </div>
+            </div>-->
             <div style="width: 100%; float: left;"><a href="#page1">Back to first page</a></div>
 
         </div>
